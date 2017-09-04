@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/TestingFriction_HingeJoing.unity
+- path: Assets/objects/LeverFun.unity
   isLoaded: 1
   isActive: 1
