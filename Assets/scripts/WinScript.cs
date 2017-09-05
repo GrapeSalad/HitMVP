@@ -5,11 +5,14 @@ using TextControl;
 
 public class WinScript : MonoBehaviour {
 
-	private GameObject hideAtStart;
+	private GameObject hideMVPAtStart;
+	private GameObject hideFireWorksAtStart;
 	// Use this for initialization
 	void Start () {
-		hideAtStart = GameObject.Find ("MVP");
-		hideAtStart.gameObject.SetActive (false);
+		hideMVPAtStart = GameObject.Find ("MVP");
+		hideFireWorksAtStart = GameObject.Find ("Fireworks");
+		hideMVPAtStart.gameObject.SetActive (false);
+		hideFireWorksAtStart.gameObject.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -20,7 +23,8 @@ public class WinScript : MonoBehaviour {
 		if(other.CompareTag("Player"))
 		{
 			print("enter");
-			hideAtStart.gameObject.SetActive (true);
+			hideMVPAtStart.gameObject.SetActive (true);
+			hideFireWorksAtStart.gameObject.SetActive (true);
 		}
 	}
 }
