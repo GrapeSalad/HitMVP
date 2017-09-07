@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/objects/LeverFun.unity
+- path: Assets/scenes/LeverFun.unity
   isLoaded: 1
   isActive: 1

@@ -10,7 +10,7 @@ namespace TextControl
 
 		public Text text;
 		void Start(){
-			text.text = "Press and Hold The Space Bar to add force to the smaller ball";
+			text.text = "Press and Hold The Space Bar to add downward force to the smaller ball";
 		}
 		void FixedUpdate(){
 			if (Input.GetKey (KeyCode.Space)) {
